@@ -1,1 +1,9 @@
+const data = {
+    name: "Max",
+    age: 25,
+    city: "Kyiv"
+};
 
+const formatted = JSON.stringify(data, null, 4);
+
+console.log(formatted);
