@@ -1,0 +1,25 @@
+using System;
+using System.Text.Json;
+
+class Program
+{
+    static void Main()
+    {
+        var data = new
+        {
+            name = "Max",
+            age = 25,
+            city = "Kyiv"
+        };
+
+        string formatted =
+            JsonSerializer.Serialize(
+                data,
+                new JsonSerializerOptions
+                {
+                    WriteIndented = true
+                });
+
+        Console.WriteLine(formatted);
+    }
+}
