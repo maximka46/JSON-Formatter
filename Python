@@ -1,0 +1,11 @@
+import json
+
+data = {
+    "name": "Max",
+    "age": 25,
+    "city": "Kyiv"
+}
+
+formatted = json.dumps(data, indent=4)
+
+print(formatted)
